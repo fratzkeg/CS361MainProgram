@@ -1,4 +1,31 @@
 {
-  "accounts": [],
-  "expenses": []
+  "accounts": [
+    {
+      "name": "Main",
+      "type": "Checking",
+      "balance": 1000.0
+    },
+    {
+      "name": "Main Main",
+      "type": "Main",
+      "balance": 3000.0
+    }
+  ],
+  "expenses": [
+    {
+      "date": "2025-04-20",
+      "amount": 200.0,
+      "category": "TV"
+    },
+    {
+      "date": "2025-05-05",
+      "amount": 20.0,
+      "category": "Food"
+    },
+    {
+      "date": "2025-05-05",
+      "amount": 1.0,
+      "category": "banana"
+    }
+  ]
 }

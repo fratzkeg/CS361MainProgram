@@ -46,7 +46,6 @@ def manage_accounts(data):
         if choice == '' or choice == '3':
             return
         if choice == '1':
-            # Add Account
             name = input("Account Name (Enter to cancel): ").strip()
             if not name:
                 return
@@ -71,7 +70,6 @@ def manage_accounts(data):
             print("\n✓ Account added!")
             pause()
         elif choice == '2':
-            # Delete Account
             if not data['accounts']:
                 print("\nNo accounts to delete.")
                 pause()
@@ -100,9 +98,13 @@ def manage_accounts(data):
 def record_expense(data):
     os.system('clear' if os.name == 'posix' else 'cls')
     print("=== Record Expense ===\n")
-    exp_date = input("Date (YYYY-MM-DD) (Enter to cancel): ").strip()
+    # DATE: empty defaults to today
+    default_date = str(date.today())
+    exp_date = input(f"Date (YYYY-MM-DD) [default {default_date}]: ").strip()
     if not exp_date:
-        return
+        exp_date = default_date
+
+    # AMOUNT: empty cancels
     amt_str = input("Amount ($) (Enter to cancel): ").strip()
     if not amt_str:
         return
@@ -112,9 +114,12 @@ def record_expense(data):
         print("\nInvalid number. Returning to menu.")
         pause()
         return
+
+    # CATEGORY: empty cancels
     category = input("Category (Enter to cancel): ").strip()
     if not category:
         return
+
     data['expenses'].append({
         "date": exp_date,
         "amount": amount,
