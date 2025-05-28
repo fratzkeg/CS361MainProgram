@@ -9,6 +9,11 @@
       "name": "Main Main",
       "type": "Main",
       "balance": 3000.0
+    },
+    {
+      "name": "Retirement",
+      "type": "Savings",
+      "balance": 50000.0
     }
   ],
   "expenses": [
@@ -26,6 +31,16 @@
       "date": "2025-05-05",
       "amount": 1.0,
       "category": "banana"
+    },
+    {
+      "date": "2025-05-05",
+      "amount": 20.0,
+      "category": "food"
+    },
+    {
+      "date": "2025-05-27",
+      "amount": 700.0,
+      "category": "Personal Gift"
     }
   ]
 }
