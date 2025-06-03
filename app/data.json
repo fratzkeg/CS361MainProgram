@@ -6,14 +6,19 @@
       "balance": 1000.0
     },
     {
-      "name": "Main Main",
-      "type": "Main",
+      "name": "Savings",
+      "type": "Savings",
       "balance": 3000.0
     },
     {
-      "name": "Retirement",
-      "type": "Savings",
-      "balance": 50000.0
+      "name": "Test",
+      "type": "Testing",
+      "balance": 1000.0
+    },
+    {
+      "name": "Testing2",
+      "type": "Test2",
+      "balance": 200.0
     }
   ],
   "expenses": [
@@ -28,19 +33,9 @@
       "category": "Food"
     },
     {
-      "date": "2025-05-05",
-      "amount": 1.0,
-      "category": "banana"
-    },
-    {
-      "date": "2025-05-05",
-      "amount": 20.0,
-      "category": "food"
-    },
-    {
-      "date": "2025-05-27",
-      "amount": 700.0,
-      "category": "Personal Gift"
+      "date": "2025-06-02",
+      "amount": 30.0,
+      "category": "Snacks"
     }
   ]
 }
